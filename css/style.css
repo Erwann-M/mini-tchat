@@ -1,0 +1,17 @@
+html {
+  font-size: 62.5%;
+}
+
+.page__header {
+  height: 10vh;
+  width: 100vw;
+  background-color: rgb(98, 98, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__title {
+  font-size: 5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
