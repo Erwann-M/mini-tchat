@@ -27,6 +27,12 @@ require __DIR__ . '/include/function/verifyAccount.php';
 // systeme de navigation entre les templates (via l'url) --------
 $templateStart = '404';
 
+if (!empty($_GET['utils'])) {
+    if ($_GET['utils'] === 'deconnection') {
+        $_SESSION['username'] = '';
+    }
+}
+
 if (!empty($_GET['page'])) {
 
     if ($_GET['page'] === 'inscription') {
