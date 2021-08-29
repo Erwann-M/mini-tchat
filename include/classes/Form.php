@@ -16,9 +16,10 @@ class Form {
     /**
      * Undocumented function
      *
-     * @param [type] $name
+     * @param string $name
      * @param string $class
-     * @param [type] $label
+     * @param string $label
+     * 
      * @return void
      */
     public function input($name, $label, $class = "input") {

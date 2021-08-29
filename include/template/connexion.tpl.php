@@ -1,10 +1,10 @@
 <div class="form__container">
-    <h2 class="page__title">Connection</h2>
+    <h2 class="page__title">Connexion</h2>
 
     <form action="index.php" method="post" class="form">
         <?php
             $form = new Form();
-            $form->input('text', 'Votre pseudo');
+            $form->input('pseudo', 'Votre pseudo');
             $form->input('password', 'Votre mot de passe');
             $form->submit('Se connecter');
         ?>
