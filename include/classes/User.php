@@ -1,5 +1,9 @@
 <?php
 
+// ==========================================================
+// == class user pour quelques verifications (a améliorée) ==
+// ==========================================================
+
 class User {
     private $pseudo;
     private $password1;

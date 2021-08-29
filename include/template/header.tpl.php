@@ -10,5 +10,6 @@
 <body>
     <header class="page__header">
         <h1 class="page__title">WawaTchat</h1>
+        <p>Bonjour <?= $_SESSION['username'] ?></p>
     </header>
     <div class="container">

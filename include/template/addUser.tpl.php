@@ -1,3 +1,7 @@
+
+<!-- appel de la fonction pour ajouter un utilisateur a la bdd 
+(elle retourne true ou false en fonction de si l'insertion en bdd c'est bien passé ou non ) -->
+
 <?php if (addUserInDatabase($bdd)) : ?>
     <div class="error__container">
         <p class='message__404'>Ton compte a bien été créer !!! </p>

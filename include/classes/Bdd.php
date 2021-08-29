@@ -1,5 +1,9 @@
 <?php
 
+// ============================================================================
+// ===connexion a la base de donnée via une classe (parceque c'est cool XD) ===
+// ============================================================================
+
 class Bdd {
     private $user    = 'minitchat';
     private $mdp     = 'minitchat';

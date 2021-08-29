@@ -1,3 +1,10 @@
+
+<!-- 
+    ===========================================================
+    ====Page d'érreur (parcequ'il en faut toujours une non ?)== 
+    ===========================================================
+-->
+
 <div class="error__container">
     <h2 class="title__404">Oupsss !!!</h2>
     
