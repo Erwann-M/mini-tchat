@@ -13,6 +13,7 @@ require __DIR__ . '/include/tools/kint.phar';
 require __DIR__ . '/include/classes/Bdd.php';
 require __DIR__ . '/include/classes/User.php';
 require __DIR__ . '/include/classes/Form.php';
+require __DIR__ . '/include/classes/Message.php';
 
 // connexion a la base de donnée via la classe "Bdd" ------------
 $pdo = new Bdd();
@@ -21,17 +22,26 @@ $bdd = $pdo->connectionBDD();
 // inclusion des fonction d'ajout et de verification de compte --
 require __DIR__ . '/include/function/addUserInDataBase.php';
 require __DIR__ . '/include/function/verifyAccount.php';
+
+// inclusion de la fonction d'ajout de message
+require __DIR__ . '/include/function/addMessageIndatabase.php';
 // ==============================================================
 
-// ==============================================================
-// systeme de navigation entre les templates (via l'url) --------
-$templateStart = '404';
+if (!empty($_POST['message'])) {
+    $messageAdd = addMessageInDatabase($_POST['message']);
+}
 
+// ==============================================================
+
+// utilitaire de deconnection
 if (!empty($_GET['utils'])) {
     if ($_GET['utils'] === 'deconnection') {
         $_SESSION['username'] = '';
     }
 }
+
+// systeme de navigation entre les templates (via l'url) --------
+$templateStart = '404';
 
 if (!empty($_GET['page'])) {
 

@@ -31,7 +31,12 @@ class Form {
         echo '</div>';
     }
 
+    public function textArea($name, $placeholder, $id, $cols = 100, $rows = 8) {
+        echo "<textarea name='{$name}' id='{$id}' cols='{$cols}' rows='{$rows}' placeholder='{$placeholder}' class='textarea__input'></textarea>";
+    }
+
     public function submit($nameOfbtn) {
         echo "<button type='submit' class='btn__form'>{$nameOfbtn}</button>";
     }
 }
+?>

@@ -85,3 +85,35 @@ html {
 .input__label {
   font-size: 2rem;
 }
+
+.home__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea__container {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(130, 130, 201);
+}
+
+.message__container {
+  height: 65vh;
+  width: 70vw;
+  background-color: #f1f1f1;
+  margin: 0 auto;
+}
+
+.textarea {
+  display: flex;
+}
+
+.textarea__input {
+  padding: 2%;
+}
